@@ -16,7 +16,7 @@ class PeoteViewSample
 		peoteView = new PeoteView(window.context, window.width, window.height);
 
 		var buffer = new Buffer<Sprite>(4, 4, true);
-		var display = new Display(10, 10, window.width - 20, window.height - 20, Color.GREEN);
+		var display = new Display(10, 10, window.width - 20, window.height - 20, Color.BLACK);
 		var program = new Program(buffer);
 
 		peoteView.addDisplay(display);

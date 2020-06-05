@@ -16,6 +16,17 @@
 	
 	<haxelib name="lime" />	
 	<haxelib name="peote-view" />
+    
+    <haxelib name="dsHelper"/>
+    <haxelib name="fracs"/>
+    <haxelib name="justPath"/>
+    <haxelib name="trilateral3"/>
+    <haxelib name="trilateralLimeChange"/>
+    <haxelib name="pallette"/>
+    <haxelib name="hxPolyK"/>
+    <haxelib name="poly2trihx"/>
+    <haxelib name="hxGeomAlgo"/>
+    <haxelib name="kitGL"/>
 	
 	<!-- <define name="stats" if="html5" /> -->
 	<!--<set name="angle" if="windows" />-->
