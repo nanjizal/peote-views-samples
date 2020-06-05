@@ -40,7 +40,7 @@ class Main extends lime.app.Application
 	public override function render(context:lime.graphics.RenderContext):Void
 	{
 		
-		if (peote != null) peote.render(); // Todo: param or new method to render without gl-clear
+		//if (peote != null) peote.render(); // Todo: param or new method to render without gl-clear
         if (trilateralBase != null) trilateralBase.render(context);
 	}
 	

@@ -68,7 +68,7 @@ class TrilateralBase {
     
     public function setup( drawFirst: Void->Void ){
          // PenNodule hard coded at 1000x1000 for convience so adjust
-        adjustTransform( 500, 500 );//window.width, window.height );
+        //adjustTransform( 500, 500 );//window.width, window.height );  <- BROKEN?
         var gl = window.context.webgl;
         // this uses kitGL to setup some interleave shaders you can used different ones
         // but PenNodule is setup as a helper to just use these as quick start.
@@ -125,9 +125,9 @@ class TrilateralBase {
         // this is just rough quick
         min = Math.min( width, height );
         scale = 1/min;
-        var transformMin: MatrixDozen = { a : min, b : 0, c : 0, d : -1
-                                         , e : 0,  f : -min, g : 0, h : 1
-                                         , i : 0, j : 0,k : min, l : 0 };
+        var transformMin: MatrixDozen = { a : scale, b : 0, c : 0, d : -1
+                                         , e : 0,  f : -scale, g : 0, h : 1
+                                         , i : 0, j : 0,k : scale, l : 0 };
         Trilateral.transformMatrix = transformMin;
     }
     // may need optimizing
